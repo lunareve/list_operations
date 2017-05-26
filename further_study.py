@@ -30,8 +30,16 @@ def custom_len(input_list):
         8
 
     """
+    # function with param of list
+    # count = 0
+    # for all items in list
+        # count += 1
+    #return count
 
-    return 0
+    count = 0
+    for item in input_list:
+        count += 1
+    return count
 
 
 # For the next four exercises, you'll need to be clever and think about ways
