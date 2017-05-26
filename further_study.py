@@ -104,8 +104,9 @@ def custom_insert(input_list, index, value):
 
     """
 
+    #input_list[index:] = value, input_list[index:]
     pass
-
+    
 
 def custom_remove(input_list, value):
     """Remove the first item of the value in list.
