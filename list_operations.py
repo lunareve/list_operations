@@ -133,7 +133,13 @@ def inner_four_end(input_list):
     This function should return those elements in a list, in the exact order
     described above.
 
-    For example:
+    For example:if __name__ == "__main__":
+    import doctest
+
+    result = doctest.testmod()
+    if result.failed == 0:
+        print "ALL TESTS PASSED"
+
 
     >>> inner_four_end([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
     [12, 15, 18, 21]
@@ -205,8 +211,7 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    del input_list[2]
-    del input_list[5]
+    del input_list[2:7:4]
 
 
 def delete_middle(input_list):
@@ -240,3 +245,4 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print "ALL TESTS PASSED"
+
